@@ -1,0 +1,27 @@
+{
+    "experiment_name": "exp_1",
+    "run_settings":{
+        "train_file": "empty_train.py",
+        "objective": "accuracy",
+        "hyperparam_algorithm": "grid",
+        "hyperparameter_params": {}
+    },
+    "data": {
+        "local_data_dir": "/not/used/or/needed/as/we/dont/compute/anything",
+        "remote_data_dir": "/not/used/or/needed/as/we/dont/compute/anything"
+    },
+    "server_settings": {
+        "gateway_script": "/storage/{remote_user_name}/server_setup/init_gateway.sh",
+        "slurm_script": "/storage/{remote_user_name}/server_setup/init_slurm.sh",
+        "num_cpu": 1,
+        "mem": 32,
+        "num_gpu": 0
+    },
+    "parameters": [
+        {
+            "name": "train_parameter",
+            "type": "choice",
+            "range": [0, 1, 2, 3, 4, 5, 6]
+        }
+    ]
+}

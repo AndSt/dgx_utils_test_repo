@@ -1,0 +1,10 @@
+# data libraries
+numpy
+pandas
+joblib
+
+# helpers
+absl-py
+
+# slurm-utils itself
+slurm-utils
